@@ -8,7 +8,7 @@ st.set_page_config(page_title="sandl", page_icon="🩴", layout="wide", initial_
 try:
   set = st.session_state['username']
 except:
-  util.switch_page('logout')
+  util.switch_page('app')
 #        position: relative;
 
 st.markdown("""
@@ -68,5 +68,5 @@ with profilecol2:
   
   st.write('')
   if st.button('Logout'):
-    util.switch_page('logout')
+    util.switch_page('app')
   

@@ -73,7 +73,7 @@ with col2:
         if 'userdata' not in st.session_state.keys():
           st.info('Not Logged In: Redirecting to Login page...')
           time.sleep(.5)
-          util.switch_page('logout')
+          util.switch_page('app')
         else: 
           res = requests.post("https://sandl-backend-ny3lmzb4dq-uc.a.run.app/get_intent", json={"jwt": st.session_state['userdata'], "prompt": user_input})
         value = round(res.json()["certaintyValue"] * 100)
