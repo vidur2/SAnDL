@@ -1,7 +1,6 @@
 import app_utils as util
 import streamlit as st
 import time
-import streamlit_authenticator as stauth
 from pathlib import Path
 from datetime import datetime
 import requests
